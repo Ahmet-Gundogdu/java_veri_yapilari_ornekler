@@ -4,13 +4,15 @@ import Kuyruk_queue.bagli_listelerle_yapilan.Kuyruk_calistir_bagli_listelerle;
 import Kuyruk_queue.dizilerle_yapilan.Kuyruk_Calistir_dizilerle;
 import Yigin_stack.bagli_listelerle_yapilan.Yigin_Calistir_bagli_listelerle;
 import Yigin_stack.dizilerle_yapilan.Yigin_Calistir_dizilerle;
+import javanin_kendi_linked_list_kutuphanesi.kuyruk_Queue.java_liste_kuyruk_calistir;
+import javanin_kendi_linked_list_kutuphanesi.yigin_Stack.java_liste_yigin_calistir;
 import Agaclar_trees.B_tree_calistir;
 import Bagli_Listeler_Linkend_List.Cift_yonlu_Bagli_Liste.C_Bagli_Liste_Calistir;
 import Bagli_Listeler_Linkend_List.Cift_yonlu_Dairesel_Bagli_Liste.C_D_Bagli_Calistir;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int hangisi = 8;
+        int hangisi = 9;
         /*
          * 0 => Tek Yönlü Bağlı Liste
          * 1 => Çift Yönlü Bağlı Liste
@@ -20,8 +22,10 @@ public class App {
          * 5 => Kuyruk - Queue bağlı listelerle yapılan
          * 6 => Yığın - Stack dizilerle yapılan
          * 7 => Yığın - Stack bağlı listelerle yapılan
-         * 8 => İkili Arama Ağacı - Binary Search Tree
-         * 9 => AVL Ağacı - AVL Tree
+         * 8 => Javanın Kendi Kütüphanesindeki Linked List ile Kuyruk - Queue
+         * 9 => Javanın Kendi Kütüphanesindeki Linked List ile Yığın - Stack
+         * 10 => İkili Arama Ağacı - Binary Search Tree
+         * 11 => AVL Ağacı - AVL Tree
          */
         switch (hangisi) {
             case 0:// 👌👍
@@ -48,10 +52,16 @@ public class App {
             case 7:// 👌👍
                 yigin_Stack_bagli_listelerle();
                 break;
-            case 8:// 👍👌
+            case 8:
+                javanin_linked_list_kuyruk();
+                break;
+            case 9:// 👍👌
+                javanin_linked_list_yigin();
+                break;
+            case 10:// 👍👌
                 ikiliAramaAgaci_BinarySearchTree();
                 break;
-            case 9:
+            case 11:
                 avlAgaci_AvlTree();
                 break;
 
@@ -101,6 +111,16 @@ public class App {
     public static void yigin_Stack_bagli_listelerle() {// 👌
         Yigin_Calistir_bagli_listelerle liste_Yigin = new Yigin_Calistir_bagli_listelerle();
         liste_Yigin.calistir();
+
+    }
+    public static void javanin_linked_list_kuyruk(){// 👌
+        java_liste_kuyruk_calistir java_kuyruk = new java_liste_kuyruk_calistir();
+        java_kuyruk.calistir();
+    }
+
+    public static void javanin_linked_list_yigin(){// 👌
+        java_liste_yigin_calistir java_yigin = new java_liste_yigin_calistir();
+        java_yigin.calistir();
 
     }
 
