@@ -48,7 +48,7 @@ public class App {
             case 7:// 👌👍
                 yigin_Stack_bagli_listelerle();
                 break;
-            case 8:
+            case 8:// 👌👍
                 ikiliAramaAgaci_BinarySearchTree();
                 break;
             case 9:
