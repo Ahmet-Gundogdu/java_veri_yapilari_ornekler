@@ -4,12 +4,13 @@ import Kuyruk_queue.bagli_listelerle_yapilan.Kuyruk_calistir_bagli_listelerle;
 import Kuyruk_queue.dizilerle_yapilan.Kuyruk_Calistir_dizilerle;
 import Yigin_stack.bagli_listelerle_yapilan.Yigin_Calistir_bagli_listelerle;
 import Yigin_stack.dizilerle_yapilan.Yigin_Calistir_dizilerle;
+import Agaclar_trees.B_tree_calistir;
 import Bagli_Listeler_Linkend_List.Cift_yonlu_Bagli_Liste.C_Bagli_Liste_Calistir;
 import Bagli_Listeler_Linkend_List.Cift_yonlu_Dairesel_Bagli_Liste.C_D_Bagli_Calistir;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int hangisi;
+        int hangisi = 8;
         /*
          * 0 => Tek Yönlü Bağlı Liste
          * 1 => Çift Yönlü Bağlı Liste
@@ -22,8 +23,6 @@ public class App {
          * 8 => İkili Arama Ağacı - Binary Search Tree
          * 9 => AVL Ağacı - AVL Tree
          */
-        hangisi = 7;
-
         switch (hangisi) {
             case 0:// 👌👍
                 tekYonluBagliListe();
@@ -106,7 +105,8 @@ public class App {
     }
 
     public static void ikiliAramaAgaci_BinarySearchTree() {
-
+        B_tree_calistir ikili_arama_agaci = new B_tree_calistir();
+        ikili_arama_agaci.calistir();
     }
 
     public static void avlAgaci_AvlTree() {
