@@ -3,3 +3,5 @@
 **'_calistir_'** Classları, veri yapılarını konsol arayüzünde kullanmak için.
 
 'App' Class'ı içinde, repoda olan bütün veri yapılarını ayrı ayrı çalıştıracak şekilde düzenlendi.
+
+AVL ağacı henüz eklenmedi!
